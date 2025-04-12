@@ -1,0 +1,83 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #1b0034, #2c1452);
+    color: white;
+  }
+  
+  header {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    margin: 0 1em;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #9c8cff;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 5em 2em;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5em;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .feature {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5em;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .gallery, .about, .contact {
+    padding: 4em 2em;
+  }
+  
+  .gallery img, .about img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1em;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2em 0;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  footer {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2em;
+    text-align: center;
+  }

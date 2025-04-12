@@ -1,0 +1,7 @@
+// Animasi saat scroll window.addEventListener('scroll', function() { const elements = document.querySelectorAll('.feature, .project-slider img, .intro, .thoughts, .contact'); elements.forEach(el => { const position = el.getBoundingClientRect().top; const screenPosition = window.innerHeight / 1.3; if(position < screenPosition) { el.classList.add('active'); } }); });
+
+// Smooth scroll untuk navigasi const navLinks = document.querySelectorAll('nav ul li a'); navLinks.forEach(link => { link.addEventListener('click', function(e) { e.preventDefault(); const target = document.querySelector(this.getAttribute('href')); target.scrollIntoView({ behavior: 'smooth' }); }); });
+
+// Efek hover bintang di background const body = document.querySelector('body'); body.addEventListener('mousemove', e => { const star = document.createElement('div'); star.className = 'star'; star.style.left = ${e.clientX}px; star.style.top = ${e.clientY}px; document.body.appendChild(star); setTimeout(() => { star.remove(); }, 1000); });
+
+// Ketik efek untuk intro const introText = document.querySelector('.intro p'); const text = introText.innerText; introText.innerText = ''; let i = 0; function typeEffect() { if (i < text.length) { introText.innerText += text.charAt(i); i++; setTimeout(typeEffect, 50); } } typeEffect();
